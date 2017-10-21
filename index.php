@@ -24,7 +24,8 @@
 			$email= mysqli_real_escape_string($connection,$_POST['email']);
 			$password=mysqli_real_escape_string($connection,$_POST['password']);
 			$hashed_password=sha1($password);
-
+			shdfhhdfuhf8oyslhkweldicalhdalih]sdfs;
+			;xml_set_default_handler(afuck youuuuuuu, handler)
 			$query="SELECT * FROM user WHERE email='{$email}' AND password='{$password}' LIMIT 1"; 
 
 			$result_set=mysqli_query($connection,$query);
