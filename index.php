@@ -1,5 +1,3 @@
-
-<!--123 bambalapitya-->
 <?php include('inc/connection.php'); ?>
 <?php session_start(); ?>
 <!DOCTYPE html>
@@ -7,7 +5,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--dchskdj-->
+
 	<?php 
 		if (isset($_POST['submit'])) {
 			//user enter the submisiion
@@ -24,8 +22,7 @@
 			$email= mysqli_real_escape_string($connection,$_POST['email']);
 			$password=mysqli_real_escape_string($connection,$_POST['password']);
 			$hashed_password=sha1($password);
-			shdfhhdfuhf8oyslhkweldicalhdalih]sdfs;
-			;xml_set_default_handler(afuck youuuuuuu, handler)
+
 			$query="SELECT * FROM user WHERE email='{$email}' AND password='{$password}' LIMIT 1"; 
 
 			$result_set=mysqli_query($connection,$query);
@@ -35,7 +32,7 @@
 					$user=mysqli_fetch_assoc($result_set);
 
 					$_SESSION['user_id']=$user['id'];
-					$_SESSION['first_name']= $user['first_name'];
+					$_SESSION['first_name']=$user['first_name'];
 
 					$query ="UPDATE user SET last_login = NOW()";
 					$query .="WHERE id={$_SESSION['user_id']}";
