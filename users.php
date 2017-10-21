@@ -1,3 +1,5 @@
+<!--Hi this is me -->
+
 <?php include('inc/connection.php'); ?>
 <?php include('inc/functions.php'); ?>
 <?php session_start(); ?>
