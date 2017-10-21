@@ -7,7 +7,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+<!--dchskdj-->
 	<?php 
 		if (isset($_POST['submit'])) {
 			//user enter the submisiion
@@ -34,7 +34,7 @@
 					$user=mysqli_fetch_assoc($result_set);
 
 					$_SESSION['user_id']=$user['id'];
-					$_SESSION['first_name']=$user['first_name'];
+					$_SESSION['first_name']= $user['first_name'];
 
 					$query ="UPDATE user SET last_login = NOW()";
 					$query .="WHERE id={$_SESSION['user_id']}";
