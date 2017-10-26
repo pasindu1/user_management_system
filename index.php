@@ -1,4 +1,4 @@
-<!--hi sdkcjachdakll;kja-->
+
 <?php include('inc/connection.php'); ?>
 <?php session_start(); ?>
 <!DOCTYPE html>
