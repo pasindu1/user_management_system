@@ -2,6 +2,7 @@
 
 	session_start();
 	echo "Pasindu Weerasinghe";
+	echo "Pasindu Weerasinghe";
 	$_SESSION= array();
 
 	if (isset($_COOKIE['session_name()'])) {
